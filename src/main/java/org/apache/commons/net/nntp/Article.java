@@ -34,7 +34,7 @@ public class Article implements Threadable {
     private ArrayList<String> references;
     private boolean isReply = false;
 
-	public long byteCount;
+	private long byteCount;
 
     public Article kid, next;
 
