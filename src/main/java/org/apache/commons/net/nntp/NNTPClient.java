@@ -237,6 +237,7 @@ public class NNTPClient extends NNTP
                 article.setDate(parts[i++]);
                 article.setArticleId(parts[i++]);
                 article.addReference(parts[i++]);
+	            article.setByteCount(Long.parseLong(parts[i++]));
             } catch (NumberFormatException e) {
                 // ignored, already handled
             }

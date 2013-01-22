@@ -34,6 +34,8 @@ public class Article implements Threadable {
     private ArrayList<String> references;
     private boolean isReply = false;
 
+	public long byteCount;
+
     public Article kid, next;
 
     public Article() {
@@ -192,6 +194,14 @@ public class Article implements Threadable {
     public void setSubject(String string) {
         subject = string;
     }
+
+	public long getByteCount() {
+		return byteCount;
+	}
+
+	public void setByteCount(long l) {
+		byteCount = l;
+	}
 
 
     @Override
